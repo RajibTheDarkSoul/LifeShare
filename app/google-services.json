@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "27427308443",
+    "project_id": "lifeshare-e7553",
+    "storage_bucket": "lifeshare-e7553.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27427308443:android:ee7c0262beb4490328573e",
+        "android_client_info": {
+          "package_name": "com.example.lifeshare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCty27XaSKTShhTjnSZ6-UXudSys8XH-qE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LifeShare" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#D84949</item>
+        <item name="colorPrimaryVariant">#8C8B8E</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="btnStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">#ED341F</item>
+        <item name="cornerRadius">@dimen/btn_radius</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+    </style>
+
+    <style name="progressStyle" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:progressTint">@color/peach</item>
+        <item name="android:progressBackgroundTint">@color/peach</item>
+    </style>
+
+    <style name="TextInputLayoutHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item> <!-- Adjust text size as needed -->
+        <!-- Set your desired hint color -->
+    </style>
+
+
+
+
+
+</resources>

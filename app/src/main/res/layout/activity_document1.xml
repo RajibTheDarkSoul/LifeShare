@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D6578"
+    android:backgroundTint="#547895"
+    >
+
+<LinearLayout
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D6578"
+    android:backgroundTint="#547895"
+    tools:context=".documentActivity1"
+    android:orientation="vertical">
+
+
+    <TextView
+
+        android:id="@+id/textnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="NID Card:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:id="@+id/nidCardD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/smaple_back"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <TextView
+        android:id="@+id/textdc"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Medical Document:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mediDocD" />
+
+    <ImageView
+        android:id="@+id/mediDocD"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:src="@drawable/smaple_back"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+</LinearLayout>
+
+    </ScrollView>
+

@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LifeShare" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">#B4B3B5</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="btnStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/peach</item>
+        <item name="cornerRadius">@dimen/btn_radius</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+    </style>
+
+    <style name="TextInputLayoutHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item> <!-- Adjust text size as needed -->
+      <!-- Set your desired hint color -->
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dp"
+    android:paddingLeft="@dimen/_5sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewProfilePicsearch1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shimmer_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewUserNameSearch1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/corsiva"
+        android:text="                                "
+        android:background="@drawable/shimmer_rec"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bloodGroupSearch1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shimmer_rec"
+        android:text="             "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/textViewUserNameSearch1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="@dimen/_30sdp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/addressSearch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/shimmer_rec"
+        android:text="                                 "
+        app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch1"></TextView>
+
+
+    <TextView
+        android:id="@+id/donatedTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/shimmer_rec"
+        android:text="             "
+        android:textColor="#DDDDDD"
+        app:layout_constraintStart_toEndOf="@+id/addressSearch1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch1">
+
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProfilePicsearch2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shimmer_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewUserNameSearch2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/corsiva"
+            android:text="                                "
+            android:background="@drawable/shimmer_rec"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bloodGroupSearch2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textViewUserNameSearch2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteX="@dimen/_30sdp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/addressSearch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="                                 "
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch2"></TextView>
+
+
+        <TextView
+            android:id="@+id/donatedTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="#DDDDDD"
+            app:layout_constraintStart_toEndOf="@+id/addressSearch2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch2">
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProfilePicsearch7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shimmer_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewUserNameSearch7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/corsiva"
+            android:text="                                "
+            android:background="@drawable/shimmer_rec"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bloodGroupSearch7"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textViewUserNameSearch7"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteX="@dimen/_30sdp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/addressSearch7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="                                 "
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch7"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch7"></TextView>
+
+
+        <TextView
+            android:id="@+id/donatedTime7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="#DDDDDD"
+            app:layout_constraintStart_toEndOf="@+id/addressSearch7"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch7">
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProfilePicsearch8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shimmer_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewUserNameSearch8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/corsiva"
+            android:text="                                "
+            android:background="@drawable/shimmer_rec"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bloodGroupSearch8"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textViewUserNameSearch8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteX="@dimen/_30sdp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/addressSearch8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="                                 "
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch8"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch8"></TextView>
+
+
+        <TextView
+            android:id="@+id/donatedTime8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="#DDDDDD"
+            app:layout_constraintStart_toEndOf="@+id/addressSearch8"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch8">
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProfilePicsearch9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shimmer_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewUserNameSearch9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/corsiva"
+            android:text="                                "
+            android:background="@drawable/shimmer_rec"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch9"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bloodGroupSearch9"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textViewUserNameSearch9"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteX="@dimen/_30sdp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/addressSearch9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="                                 "
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch9"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch9"></TextView>
+
+
+        <TextView
+            android:id="@+id/donatedTime9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="#DDDDDD"
+            app:layout_constraintStart_toEndOf="@+id/addressSearch9"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch9">
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProfilePicsearch6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shimmer_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewUserNameSearch6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/corsiva"
+            android:text="                                "
+            android:background="@drawable/shimmer_rec"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bloodGroupSearch6"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textViewUserNameSearch6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteX="@dimen/_30sdp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/addressSearch6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="                                 "
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch6"></TextView>
+
+
+        <TextView
+            android:id="@+id/donatedTime6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="#DDDDDD"
+            app:layout_constraintStart_toEndOf="@+id/addressSearch6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch6">
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProfilePicsearch5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shimmer_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewUserNameSearch5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/corsiva"
+            android:text="                                "
+            android:background="@drawable/shimmer_rec"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bloodGroupSearch5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textViewUserNameSearch5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteX="@dimen/_30sdp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/addressSearch5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="                                 "
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch5"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch5"></TextView>
+
+
+        <TextView
+            android:id="@+id/donatedTime5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="#DDDDDD"
+            app:layout_constraintStart_toEndOf="@+id/addressSearch5"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch5">
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProfilePicsearch4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shimmer_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewUserNameSearch4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/corsiva"
+            android:text="                                "
+            android:background="@drawable/shimmer_rec"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bloodGroupSearch4"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textViewUserNameSearch4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteX="@dimen/_30sdp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/addressSearch4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="                                 "
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch4"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch4"></TextView>
+
+
+        <TextView
+            android:id="@+id/donatedTime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="#DDDDDD"
+            app:layout_constraintStart_toEndOf="@+id/addressSearch4"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch4">
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewProfilePicsearch3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shimmer_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewUserNameSearch3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/corsiva"
+            android:text="                                "
+            android:background="@drawable/shimmer_rec"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bloodGroupSearch3"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textViewUserNameSearch3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_editor_absoluteX="@dimen/_30sdp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/addressSearch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="                                 "
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePicsearch3"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch3"></TextView>
+
+
+        <TextView
+            android:id="@+id/donatedTime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/shimmer_rec"
+            android:text="             "
+            android:textColor="#DDDDDD"
+            app:layout_constraintStart_toEndOf="@+id/addressSearch3"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUserNameSearch3">
+
+        </TextView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+
+

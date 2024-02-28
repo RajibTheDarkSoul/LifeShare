@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_blood_request.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:gravity="center">
+
+<!--    <Button-->
+
+<!--        android:id="@+id/buttonRequestBlood"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:background="@drawable/editext_style"-->
+<!--        android:backgroundTint="#E91E63"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="REQUEST FOR BLOOD"-->
+
+<!--        android:textColor="#000000" />-->
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_posts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include layout="@layout/shimmer_post"/>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerViewPosts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonRequestBlood"
+
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+<!--    <Button-->
+
+<!--        android:id="@+id/buttonRequestBlood"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:layout_marginLeft="50dp"-->
+<!--        android:layout_marginTop="-40dp"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:background="@drawable/editext_style"-->
+<!--        android:backgroundTint="#E91E63"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="REQUEST FOR BLOOD"-->
+
+<!--        android:textColor="#FFFFFF" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonRequestBlood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/editext_style"
+        android:backgroundTint="#E91E63"
+        android:gravity="center"
+        android:src="@mipmap/logo"
+        android:text="REQUEST FOR BLOOD"
+
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</LinearLayout>

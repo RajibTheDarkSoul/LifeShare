@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+     android:layout_height="match_parent"
+     android:layout_width="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/card_background">
+
+        <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:layout_width="45dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:background="@drawable/circle"-->
+<!--            android:padding="5dp"-->
+<!--            android:src="@drawable/profile1"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:onClick="MyProfile"/>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:background="#fff"-->
+<!--            android:src="@mipmap/search"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginRight="50dp"/>-->
+
+        <ImageButton
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_logout_24"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:background="#FFF"
+            ></ImageButton>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="#fff"
+            android:src="@mipmap/settings"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="#fff"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/Nidbanners"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/background_radian"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilepics"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle_bold"
+                android:padding="5dp"
+                android:src="@mipmap/avatar2"
+                tools:ignore="MissingConstraints"
+                android:layout_gravity="center"
+                android:layout_marginTop="-62dp"/>
+            <TextView
+                android:id="@+id/userNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mohammed Rajib"
+                android:textColor="#000"
+                android:textSize="25dp"
+                android:textAlignment="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="-5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".97"
+                    android:gravity="right"
+                    android:text="Phone number"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".08"/>
+
+                <TextView
+                    android:id="@+id/donatedTimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".97"
+                    android:gravity="left"
+                    android:text="10 times"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood type : "
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_weight=".1"/>
+                <TextView
+                    android:id="@+id/bloodGroupUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AB+"
+                    android:textSize="16dp"
+                    android:layout_weight="1.8"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender : "
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_weight=".1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="16dp"
+                    android:layout_weight="1.8"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address : "
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:layout_weight=".05"
+                    android:layout_marginRight="8dp"/>
+                <TextView
+                    android:id="@+id/addressUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Basail, Tangail"
+                    android:layout_weight="1.8"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="2">
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1.8"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="My Requests"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="@dimen/_14ssp"-->
+<!--                    android:textStyle="bold" />-->
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:id="@+id/recyclerViews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="#E43434"
+    android:orientation="vertical"
+    >
+
+<!--    android:background="@drawable/background1"-->
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="85dp"
+        android:text="Register to LifeShare"
+        android:textColor="#F4F0F0"
+        android:textSize="24sp"
+        android:textStyle="normal|italic|bold" />
+
+    <TextView
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Upload your fitness-Certificate (if have any)"
+        android:textColor="@color/white"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="20dp"
+
+
+        android:backgroundTint="#FFFFFF"
+        >
+
+        <ImageView
+            android:id="@+id/certiImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/add_image3" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Upload your NID card (If have one) "
+        android:textColor="@color/white"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="20dp"
+
+
+        android:backgroundTint="#FFFFFF"
+        >
+
+        <ImageView
+            android:id="@+id/NIDImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/add_image3" />
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressButton4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="110dp"
+        android:visibility="gone"
+        tools:visibility="gone"></ProgressBar>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shapesignup"
+
+        android:drawableRight="@drawable/ic_baseline_double_arrow_24"
+        android:padding="15dp"
+        android:shadowColor="@android:color/transparent"
+        android:text="register"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+
+</LinearLayout>
+</ScrollView>

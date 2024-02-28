@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:padding="5dp"
+        app:cardCornerRadius="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/loading_png"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/profilepicCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/helvetica"
+                android:textStyle="bold"
+                android:text="username"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/circleImageView"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/_60sdp" />
+
+            <TextView
+                android:id="@+id/timeAgoCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bloodGroupCard"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/postshape"
+                android:padding="5dp"
+                android:text="   "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/circleImageView"
+                app:layout_constraintTop_toBottomOf="@+id/profilepicCard" />
+
+            <TextView
+                android:id="@+id/NumOfBagCard"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/postshape"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/bloodGroupCard"
+                app:layout_constraintTop_toBottomOf="@+id/profilepicCard" />
+
+            <TextView
+                android:id="@+id/ReqDateCard"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/postshape"
+                android:padding="5dp"
+                android:text="  "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/NumOfBagCard"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/LocationCard"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/postshape"
+                android:padding="5dp"
+                android:text=" "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/guideline_left"
+                app:layout_constraintTop_toBottomOf="@+id/ReqDateCard" />
+
+            <TextView
+                android:id="@+id/detailsCard"
+                android:layout_width="@dimen/_215sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/postshape2"
+                android:padding="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/guideline_left"
+                app:layout_constraintTop_toBottomOf="@+id/LocationCard" />
+
+
+            <!-- Horizontal guideline to center the photos -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="197dp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+
+                android:id="@+id/imageOfDocCard"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/images_blank"
+
+                app:layout_constraintStart_toStartOf="@+id/guideline_left"
+                app:layout_constraintTop_toBottomOf="@+id/detailsCard"
+                app:riv_corner_radius="20dip"
+                app:riv_mutate_background="true"
+                app:riv_oval="false"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/InterestButtonCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+
+                android:backgroundTint="#011201"
+
+                android:text="Show Interest to Donate"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageOfDocCard" />
+
+            <!-- Photo 1 -->
+            <!--        <ImageView-->
+            <!--            android:id="@+id/photo1"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="150dp"-->
+            <!--            android:background="@drawable/imageshape"-->
+            <!--            android:scaleType="centerCrop"-->
+            <!--            android:src="@drawable/smaple_back"-->
+            <!--            tools:layout_editor_absoluteX="6dp"-->
+            <!--            tools:layout_editor_absoluteY="201dp" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add a horizontal line -->
+    <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="0dp"
+        android:layout_height=".5dp"
+        android:background="#5B000000"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

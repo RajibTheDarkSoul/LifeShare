@@ -1,0 +1,162 @@
+<!-- activity_post_creation.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostCreationActivity">
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editTextReqDate"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/editTextNumOfBags"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:hint="Request Date" />-->
+
+    <EditText
+        android:id="@+id/editTextNumOfBags"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:background="@drawable/shapelogintransparent"
+        android:hint="Number of Bags"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextReqDate"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/editTextNumOfBags"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shapelogintransparent"
+        android:gravity="center"
+        android:text="Request Date:"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumOfBags" />
+
+    <Button
+
+        android:id="@+id/datePickerButton"
+        style="?android:spinnerStyle"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:layout_toEndOf="@id/editTextReqDate"
+        android:onClick="openDatePicker"
+        android:text="JAN 01 2020"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextReqDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumOfBags" />
+
+    <EditText
+
+        android:id="@+id/editTextLocation"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/editTextReqDate"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:background="@drawable/shapelogintransparent"
+        android:drawableLeft="@drawable/baseline_add_location_24"
+        android:hint="Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextReqDate" />
+
+    <EditText
+        android:id="@+id/editTextDetails"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_below="@+id/editTextLocation"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:background="@drawable/shapelogintransparent"
+        android:hint="Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerBloodGroup" />
+
+    <Spinner
+        android:id="@+id/spinnerBloodGroup"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+
+        android:layout_below="@+id/editTextDetails"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:background="@drawable/shapelogintransparent"
+        android:entries="@array/blood_groups"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLocation" />
+
+    <ImageView
+        android:id="@+id/imageViewMedicalCertification"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_below="@+id/spinnerBloodGroup"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDetails"
+        app:srcCompat="@drawable/images_blank" />
+
+    <Button
+        android:id="@+id/imageButtonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewMedicalCertification"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="108dp"
+        android:src="@drawable/add_image_png"
+        android:background="@drawable/shapelogintransparent"
+        android:text="Click to add document"
+        android:textColor="#291E1E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMedicalCertification" />
+
+    <ProgressBar
+        android:id="@+id/progressButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSelectImage"
+        tools:visibility="gone"></ProgressBar>
+
+    <Button
+        android:id="@+id/buttonCreatePost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonSelectImage"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/buttonback"
+        android:text="make request"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSelectImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

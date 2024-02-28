@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="1dp">
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardViews"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="9dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="9dp"-->
+<!--        android:backgroundTint="#55636E"-->
+<!--        android:padding="5dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="5dp">-->
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/circleImageViews"-->
+<!--                android:layout_width="75dp"-->
+<!--                android:layout_height="75dp"-->
+<!--                android:src="@mipmap/avatar2"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+
+<!--            </de.hdodenhof.circleimageview.CircleImageView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/profilepicCards"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="17dp"-->
+<!--                android:fontFamily="@font/helvetica_bold"-->
+<!--                android:text="Tapu Mondal"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/circleImageViews"-->
+<!--                app:layout_constraintTop_toTopOf="parent"></TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/timeAgoCards"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/helvetica"-->
+<!--                android:text="3min ago"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/bloodGroupCards"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginStart="14dp"-->
+<!--                android:layout_marginTop="13dp"-->
+<!--                android:background="@drawable/postshape"-->
+<!--                android:padding="5dp"-->
+<!--                android:text="  AB+  "-->
+<!--                android:textColor="@color/black"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/circleImageViews"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/profilepicCards" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/NumOfBagCards"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="13dp"-->
+<!--                android:background="@drawable/postshape"-->
+<!--                android:padding="5dp"-->
+<!--                android:text=" 3 Bags "-->
+<!--                android:textColor="@color/black"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/bloodGroupCards"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/profilepicCards" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/ReqDateCards"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginStart="9dp"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:background="@drawable/postshape"-->
+<!--                android:padding="5dp"-->
+<!--                android:text=" 9th Dec,2023 "-->
+<!--                android:textColor="@color/black"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/NumOfBagCards"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/LocationCards"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginStart="91dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:background="@drawable/postshape"-->
+<!--                android:padding="5dp"-->
+<!--                android:text=" Mymensingh Medical College "-->
+<!--                android:textColor="@color/black"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/ReqDateCards" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/detailsCards"-->
+<!--                android:layout_width="280dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginEnd="13dp"-->
+<!--                android:background="@drawable/postshape2"-->
+<!--                android:padding="5dp"-->
+<!--                android:paddingLeft="8dp"-->
+<!--                android:paddingRight="8dp"-->
+<!--                android:text="Emergency blood needed for a operation patient. 2 bags managed , more 3 bags are needed. Please inform if anyone can donate the blood."-->
+<!--                android:textColor="@color/black"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/LocationCards" />-->
+
+
+<!--            &lt;!&ndash; Horizontal guideline to center the photos &ndash;&gt;-->
+<!--            <androidx.constraintlayout.widget.Guideline-->
+<!--                android:id="@+id/guideline_centers"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                app:layout_constraintGuide_percent="0.5" />-->
+
+<!--            <com.makeramen.roundedimageview.RoundedImageView-->
+
+<!--                android:id="@+id/imageOfDocCards"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_marginTop="7dp"-->
+<!--                android:layout_marginEnd="4dp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:src="@drawable/smaple_back"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--                app:layout_constraintTop_toBottomOf="@+id/detailsCards"-->
+<!--                app:riv_corner_radius="20dip"-->
+<!--                app:riv_mutate_background="true"-->
+<!--                app:riv_oval="false"-->
+<!--                tools:ignore="MissingConstraints" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/InterestButtonCards"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginEnd="79dp"-->
+
+<!--                android:backgroundTint="#011201"-->
+<!--                android:text="View Interested Donors"-->
+
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@color/white"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/imageOfDocCards" />-->
+
+<!--            &lt;!&ndash; Photo 1 &ndash;&gt;-->
+<!--            &lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/photo1"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="150dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:background="@drawable/imageshape"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:scaleType="centerCrop"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:src="@drawable/smaple_back"&ndash;&gt;-->
+<!--            &lt;!&ndash;            tools:layout_editor_absoluteX="6dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;            tools:layout_editor_absoluteY="201dp" />&ndash;&gt;-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViews"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:padding="5dp"
+        app:cardCornerRadius="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageViews"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/loading_png"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/profilepicCards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:fontFamily="@font/helvetica"
+                android:textStyle="bold"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/circleImageViews"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_lefts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/_60sdp" />
+
+            <TextView
+                android:id="@+id/timeAgoCards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bloodGroupCards"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/postshape"
+                android:padding="5dp"
+                android:text="    "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/circleImageViews"
+                app:layout_constraintTop_toBottomOf="@+id/profilepicCards" />
+
+            <TextView
+                android:id="@+id/NumOfBagCards"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/postshape"
+                android:padding="5dp"
+                android:text=" "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/bloodGroupCards"
+                app:layout_constraintTop_toBottomOf="@+id/profilepicCards" />
+
+            <TextView
+                android:id="@+id/ReqDateCards"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/postshape"
+                android:padding="5dp"
+                android:text=" "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/NumOfBagCards"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/LocationCards"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/postshape"
+                android:padding="5dp"
+                android:text=" "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/guideline_lefts"
+                app:layout_constraintTop_toBottomOf="@+id/ReqDateCards" />
+
+            <TextView
+                android:id="@+id/detailsCards"
+                android:layout_width="@dimen/_215sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/postshape2"
+                android:padding="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text=" "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/guideline_lefts"
+                app:layout_constraintTop_toBottomOf="@+id/LocationCards" />
+
+
+            <!-- Horizontal guideline to center the photos -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_centers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="197dp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+
+                android:id="@+id/imageOfDocCards"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/images_blank"
+
+                app:layout_constraintStart_toStartOf="@+id/guideline_lefts"
+                app:layout_constraintTop_toBottomOf="@+id/detailsCards"
+                app:riv_corner_radius="20dip"
+                app:riv_mutate_background="true"
+                app:riv_oval="false"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/InterestButtonCards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="5dp"
+
+                android:backgroundTint="#011201"
+
+                android:text="View Interested Donors"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageOfDocCards" />
+
+            <!-- Photo 1 -->
+            <!--        <ImageView-->
+            <!--            android:id="@+id/photo1"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="150dp"-->
+            <!--            android:background="@drawable/imageshape"-->
+            <!--            android:scaleType="centerCrop"-->
+            <!--            android:src="@drawable/smaple_back"-->
+            <!--            tools:layout_editor_absoluteX="6dp"-->
+            <!--            tools:layout_editor_absoluteY="201dp" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
