@@ -101,7 +101,14 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
         holder.timeAgoCard.setText(calculateTimeDifference(currentPost.getTimeAgo()));
         holder.bloodGroupCard.setText(currentPost.getBloodGroup());
-        holder.numOfBagCard.setText(String.valueOf(currentPost.getNumOfBags()) + " Bags");
+        if (currentPost.getNumOfBags()==1){
+            holder.numOfBagCard.setText(String.valueOf(currentPost.getNumOfBags()) + " Bag");
+
+        }
+        else{
+            holder.numOfBagCard.setText(String.valueOf(currentPost.getNumOfBags()) + " Bags");
+
+        }
         holder.reqDateCard.setText(currentPost.getReqDate());
         holder.locationCard.setText(currentPost.getLocation());
         holder.detailsCard.setText(currentPost.getDetails());

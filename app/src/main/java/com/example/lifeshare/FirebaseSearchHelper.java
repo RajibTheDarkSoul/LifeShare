@@ -16,7 +16,7 @@ public class FirebaseSearchHelper {
 
     public FirebaseSearchHelper() {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        usersReference = database.getReference("Users"); // Adjust the reference path based on your Firebase structure
+        usersReference = database.getReference("Users");
     }
 
     public void getAllUsers(final OnUsersDataLoadedListener listener) {

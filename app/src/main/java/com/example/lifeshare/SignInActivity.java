@@ -48,7 +48,7 @@ public class SignInActivity extends AppCompatActivity {
 
         }
 
-        //Checking is already Signed in or not
+        //Checking already Signed in or not
         cur=auth.getCurrentUser();
         if(cur!=null)
         {
